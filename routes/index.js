@@ -2,34 +2,21 @@ var express = require('express');
 var router = express.Router();
 var familyData = require('../public/data/my-family'); // data related to family in json
 
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: familyData[0].name, description: familyData[0].description, short_code: familyData[0].short_code });
+/* Routing for the website from root path '/' */
+router.use('/', function(req, res, next) {
+  // select the view to render
+  switch (req.path) {
+    case '/': res.render('index', { title: familyData[0].name, description: familyData[0].description, short_code: familyData[0].short_code });
+      break;
+    case '/pranav': res.render('index', { title: familyData[1].name, description: familyData[1].description, short_code: familyData[1].short_code });
+      break;
+    case '/aanchal': res.render('index', { title: familyData[2].name, description: familyData[2].description, short_code: familyData[2].short_code });
+      break;
+    case '/anu': res.render('index', { title: familyData[3].name, description: familyData[3].description, short_code: familyData[3].short_code });
+      break;
+    case '/tarloki': res.render('index', { title: familyData[4].name, description: familyData[4].description, short_code: familyData[4].short_code });
+      break;
+  }
 });
-
-// route to my page
-router.get('/pranav', function(req, res, next) {
-  res.render('pranav', { title: familyData[1].name, description: familyData[1].description, short_code: familyData[1].short_code });
-});
-
-// route to my sister's page
-router.get('/aanchal', function(req, res, next) {
-  res.render('aanchal', { title: familyData[2].name, description: familyData[2].description, short_code: familyData[2].short_code });
-});
-
-// route to my mom's page
-router.get('/anu', function(req, res, next) {
-  res.render('anu', { title: familyData[3].name, description: familyData[3].description, short_code: familyData[3].short_code });
-});
-
-// route to my dad's page
-router.get('/tarloki', function(req, res, next) {
-  res.render('tarloki', { title: 'Tarloki Nath Sharma', description: 'My dad\'s a businessman and he owns a pharmacy store.'});
-});
-
-/* Either use the above given routes and render different pages for each member
-   Or render only the main.ejs template for all the routes (didn't needed to create separate template
-   file for each member, but did because of lab requirement) */
 
 module.exports = router;

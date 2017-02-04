@@ -11,7 +11,13 @@
                 </p>
             </div>
             <div class="col-md-4">
-                <img src="/images/my_family.png" alt="<%= title %>">
+                <% if (short_code == 'my_family') { %>
+              <img src="/images/<%= short_code %>.png" alt="<%= title %>">
+                <% } else if (short_code == 'anuradha_sharma') { %>
+              <img src="/images/<%= short_code %>.ico" alt="<%= title %>">
+                <% } else { %>
+              <img src="/images/<%= short_code %>.svg" alt="<%= title %>">
+                <% } %>
             </div>
         </div>
     </div>
