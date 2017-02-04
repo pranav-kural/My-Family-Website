@@ -4,6 +4,7 @@ var familyData = require('../public/data/my-family'); // data related to family 
 
 /* I could've used multiple routes instead of one, and also created separate template (view) files
  * for each family member, but that would have been a lot of repetitive code and this seemed a better way to do it
+ * However, for files exactly same as required according to the lab instructions: 'git checkout 4ff7502c12d158f700113f9a1cc7bf53e2e3bda0 .' [requires repo to be cloned]
  */
 
 /* Routing for the website from root path '/' */
