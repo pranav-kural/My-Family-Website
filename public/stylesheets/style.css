@@ -1,5 +1,6 @@
 body {
   font-family: "Lato", Helvetica, Arial, sans-serif;
+  background-image: url('../images/background.gif');
 }
 footer{
     background: #eee !important;
