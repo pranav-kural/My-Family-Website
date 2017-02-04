@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var familyData = require('../public/data/my-family');
+var familyData = require('../public/data/my-family'); // data related to family in json
 
 
 /* GET home page. */
