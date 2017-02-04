@@ -2,6 +2,10 @@ var express = require('express');
 var router = express.Router();
 var familyData = require('../public/data/my-family'); // data related to family in json
 
+/* I could've used multiple routes instead of one, and also created separate template (view) files
+ * for each family member, but that would have been a lot of repetitive code and this seemed a better way to do it
+ */
+
 /* Routing for the website from root path '/' */
 router.use('/', function(req, res, next) {
   // select the view to render
