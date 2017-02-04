@@ -28,4 +28,8 @@ router.get('/tarloki', function(req, res, next) {
   res.render('tarloki', { title: 'Tarloki Nath Sharma', description: 'My dad\'s a businessman and he owns a pharmacy store.'});
 });
 
+/* Either use the above given routes and render different pages for each member
+   Or render only the main.ejs template for all the routes (didn't needed to create separate template
+   file for each member, but did because of lab requirement) */
+
 module.exports = router;
