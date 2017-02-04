@@ -1,0 +1,27 @@
+[
+    {
+        "name": "My Family",
+        "description": "A small website about my small cute family 🌼",
+        "short_code": "my_family"
+    },
+    {
+        "name": "Pranav Kural",
+        "description": "I'm a web developer and a computer programming student studying at Georgian College.",
+        "short_code": "pranav_kural"
+    }, 
+    {
+        "name": "Aanchal Sharma",
+        "description": "Aanchal Sharma studies in 9th grade and enjoys abstract painting.",
+        "short_code": "anchal_sharma"
+    }, 
+    {
+        "name": "Anuradha Sharma",
+        "description": "My mom's a housewife and she's a really good mom.",
+        "short_code": "anuradha_sharma"
+    }, 
+    {
+        "name": "Tarloki Nath Sharma",
+        "description": "My dad's a businessman and he owns a pharmacy store.",
+        "short_code": "tarloki_nath_sharma"
+    }
+]
